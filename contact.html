@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Echoes - Free HTML Bootstrap Template</title>
+      <!-- Css -->
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+   </head>
+   <body>
+      <nav class="navbar navbar-default color-fill navbar-fixed-top">
+         <div class="col-md-12">
+            <div class="nav">
+               <button class="btn-nav">
+               <span class="icon-bar top"></span>
+               <span class="icon-bar middle"></span>
+               <span class="icon-bar bottom"></span>
+               </button>
+            </div>
+            <a class="navbar-brand" href="index.html">
+            <img class="logo" src="img/logo.png" alt="logo">
+            </a>
+            <div class="nav-content hideNav hidden">
+               <ul class="nav-list vcenter">
+                  <li class="nav-item"><a class="item-anchor" href="index.html">STRONA GŁÓWNA</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="about.html">O MNIE</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="portfolio.html">GALERIA</a></li>
+                  <li class="nav-item"><a class="item-anchor" href="contact.html">KONTAKT</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <section>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h1>
+                     Na co czekasz? <br>
+                     Napisz do mnie!
+                  </h1>
+                  <h4> <a href="locokiteschool@gmail.com">locokiteschool@gmail.com</a></h4>
+                  <p>519 064 514</p>
+               </div>
+            </div>
+            <div class="row margin-top-45">
+               <div class="col-md-12">
+                  <img class="img-responsive margin-top-45" src="img/5.jpg" alt="me">
+               </div>
+            </div>
+         </div>
+         </div>
+      </section>
+      <!-- script -->
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/modernizr.js"></script>
+      <script src="js/script.js"></script>
+   </body>
+
+   <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        #countdown {
+            font-size: 2em;
+        }
+    </style>
+    <title>Prosty Licznik Dni</title>
+</head>
+<body>
+
+    <h1>SEZON 2024 za:</h1>
+    <div id="countdown"></div>
+
+    <script>
+        // Ustaw datę docelową
+        const targetDate = new Date('2024-05-01T00:00:00');
+
+        function updateCountdown() {
+            const currentDate = new Date();
+            const difference = targetDate - currentDate;
+
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+
+            document.getElementById('countdown').innerText = days + " dni";
+        }
+
+        // Aktualizuj co sekundę
+        setInterval(updateCountdown, 1000);
+
+        // Wywołaj funkcję po załadowaniu strony
+        updateCountdown();
+    </script>
+</body>
+
+</html>
